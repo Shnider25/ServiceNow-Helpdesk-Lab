@@ -1,8 +1,5 @@
-# ServiceNow-Helpdesk-Lab
-Hands-on ServiceNow ITSM lab — incident ticketing, priority classification, and full ticket lifecycle management using a free Personal Developer Instance (PDI). Based on real homelab infrastructure scenarios.
 
-
-# 🎫 ServiceNow Helpdesk Lab — SB Studio IT Service Desk
+# 🎫 ServiceNow Helpdesk Lab — IT Service Desk
 
 **Platform:** ServiceNow Personal Developer Instance (PDI)  
 **Instance:** dev307832 | **Release:** Australia (Latest)  
@@ -27,7 +24,7 @@ This project simulates a real-world IT helpdesk environment built inside a **fre
 ## 🖥️ Incident Queue
 
 <p>
-<img src="" height="80%" width="80%" alt="ServiceNow Incident Queue — All 5 SB Studio Tickets"/>
+![image alt](https://imgur.com/g94JNgb)
 </p>
 
 ---
