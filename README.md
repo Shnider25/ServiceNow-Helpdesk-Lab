@@ -24,7 +24,7 @@ This project simulates a real-world IT helpdesk environment built inside a **fre
 ## 🖥️ Incident Queue
 
 <p>
-![image alt](https://imgur.com/g94JNgb)
+![image alt](https://imgur.com/g94JNgb)](https://i.imgur.com/g94JNgb.png)
 </p>
 
 ---
