@@ -20,6 +20,14 @@ This project simulates a real-world IT helpdesk environment built inside a **fre
 
 ---
 
+## 🖥️ Incident Queue
+
+<p>
+<img src="https://i.imgur.com/FyjX38b.png" height="80%" width="80%" alt="ServiceNow Incident Queue — All 5 SB Studio Tickets Resolved"/>
+</p>
+
+---
+
 ## 🏗️ Lab Infrastructure
 
 | Device | Role | OS |
@@ -75,11 +83,11 @@ TrueNAS SCALE VM hosted on HP ProDesk (pve-main) is not responding. SMB shares f
 Verified TrueNAS SCALE VM was in a stopped state in Proxmox. Started the VM from the Proxmox web UI on pve-main. TrueNAS came back online and all SMB shares are now accessible from the Mac Mini. Root cause was the VM did not auto-start after a Proxmox host reboot. Enabled the auto-start option on the VM to prevent recurrence.
 
 <p>
-<img src="https://i.imgur.com/KgFqp2v.png" height="80%" width="80%" alt="INC0010002 — Critical Ticket Resolved with Resolution Notes"/>
+<img src="https://i.imgur.com/6Czl8e0.png" height="80%" width="80%" alt="INC0010002 — Priority 1 Critical Ticket Resolved"/>
 </p>
 
 <p>
-<img src="https://i.imgur.com/LLdNsI0.png" height="80%" width="80%" alt="INC0010002 — Activity Log Showing Full Ticket Lifecycle"/>
+<img src="https://i.imgur.com/WvhkkWF.png" height="80%" width="80%" alt="INC0010002 — Activity Log Showing Full Ticket Lifecycle"/>
 </p>
 
 ---
@@ -129,7 +137,7 @@ php occ config:system:set trusted_domains 1 --value=[VM-IP]
 Reconfigured the external SFTP storage connection pointing to TrueNAS. Nextcloud is now accessible and external storage is reconnected.
 
 <p>
-<img src="https://i.imgur.com/EUDdXtR.png" height="80%" width="80%" alt="INC0010004 — Nextcloud Software Ticket Resolved"/>
+<img src="https://i.imgur.com/f0wzGLd.png" height="80%" width="80%" alt="INC0010004 — Nextcloud Software Ticket Resolved"/>
 </p>
 
 ---
@@ -147,22 +155,14 @@ Reconfigured the external SFTP storage connection pointing to TrueNAS. Nextcloud
 | **Resolved by** | Shnider Baptiste |
 
 **Description:**  
-Mac Mini cannot connect to SMB shares on TrueNAS. Shares sb-studio and sb-pictures are not mounting. Need to verify SMB service is running on TrueNAS and check credentials.
+Mac Mini cannot connect to SMB shares on TrueNAS. Shares sb-studio and sb-pictures are not mounting. Need to verify the SMB service is running on TrueNAS and check credentials.
 
 **Resolution:**  
-Verified SMB service was running on TrueNAS SCALE. Issue was caused by cached incorrect credentials on the Mac. Resolved by opening Keychain Access on Mac Mini, removing old TrueNAS credentials, and reconnecting via Finder using the TrueNAS admin account. Shares now mounting correctly and configured to reconnect at login.
+Verified SMB service was running on TrueNAS SCALE. The issue was caused by cached incorrect credentials on the Mac. Resolved by opening Keychain Access on Mac Mini, removing old TrueNAS credentials, and reconnecting via Finder using the TrueNAS admin account. Shares now mount correctly and are configured to reconnect at login.
 
 ---
 
 ## 📊 Summary
-
-<p>
-<img src="https://i.imgur.com/SDrg8JW.png" height="80%" width="80%" alt="Incident Queue — All 5 SB Studio Tickets"/>
-</p>
-
-<p>
-<img src="https://i.imgur.com/8Mrg92K.png" height="80%" width="80%" alt="Final Incident Queue — All 5 Tickets Resolved"/>
-</p>
 
 | Ticket | Description | Priority | Category | Status |
 |---|---|---|---|---|
@@ -187,16 +187,7 @@ Verified SMB service was running on TrueNAS SCALE. Issue was caused by cached in
 - **Network Storage** — TrueNAS SCALE, SMB shares, NAS connectivity
 - **Self-hosted Services** — Nextcloud, Docker, Portainer
 
----
-
-## 📈 Next Steps
-
-- [ ] Add homelab devices to ServiceNow CMDB as Configuration Items
-- [ ] Build incident dashboard with ticket metrics
-- [ ] Create SLA rules for ticket response times
-- [ ] Set up Flow Designer automation for ticket routing
-- [ ] Pursue ServiceNow Certified System Administrator (CSA) certification
 
 ---
 
-*Built by Shnider Baptiste · SB Studio Homelab · 2026*
+*Built by Shnider Baptiste · Homelab · 2026*
