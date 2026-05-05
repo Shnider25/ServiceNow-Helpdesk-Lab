@@ -1,4 +1,3 @@
-
 # 🎫 ServiceNow Helpdesk Lab — IT Service Desk
 
 **Platform:** ServiceNow Personal Developer Instance (PDI)  
@@ -18,20 +17,6 @@ This project simulates a real-world IT helpdesk environment built inside a **fre
 - Root cause analysis and resolution documentation
 - Assignment group routing
 - ITSM best practices used in enterprise environments
-
----
-
-## 🖥️ Incident Queue
-
-![image alt](https://i.imgur.com/SDrg8JW.png)
-
-![image alt](https://i.imgur.com/KgFqp2v.png)
-
-![image alt](https://i.imgur.com/LLdNsI0.png)
-
-![image alt](https://i.imgur.com/EUDdXtR.png)
-
-![image alt](https://i.imgur.com/8Mrg92K.png)
 
 ---
 
@@ -90,11 +75,11 @@ TrueNAS SCALE VM hosted on HP ProDesk (pve-main) is not responding. SMB shares f
 Verified TrueNAS SCALE VM was in a stopped state in Proxmox. Started the VM from the Proxmox web UI on pve-main. TrueNAS came back online and all SMB shares are now accessible from the Mac Mini. Root cause was the VM did not auto-start after a Proxmox host reboot. Enabled the auto-start option on the VM to prevent recurrence.
 
 <p>
-<img src="" height="80%" width="80%" alt="INC0010002 — Critical Ticket Resolved with Resolution Notes"/>
+<img src="https://i.imgur.com/KgFqp2v.png" height="80%" width="80%" alt="INC0010002 — Critical Ticket Resolved with Resolution Notes"/>
 </p>
 
 <p>
-<img src="" height="80%" width="80%" alt="INC0010002 — Activity Log Showing Full Ticket Lifecycle"/>
+<img src="https://i.imgur.com/LLdNsI0.png" height="80%" width="80%" alt="INC0010002 — Activity Log Showing Full Ticket Lifecycle"/>
 </p>
 
 ---
@@ -144,7 +129,7 @@ php occ config:system:set trusted_domains 1 --value=[VM-IP]
 Reconfigured the external SFTP storage connection pointing to TrueNAS. Nextcloud is now accessible and external storage is reconnected.
 
 <p>
-<img src="" height="80%" width="80%" alt="INC0010004 — Nextcloud Software Ticket Resolved"/>
+<img src="https://i.imgur.com/EUDdXtR.png" height="80%" width="80%" alt="INC0010004 — Nextcloud Software Ticket Resolved"/>
 </p>
 
 ---
@@ -172,7 +157,11 @@ Verified SMB service was running on TrueNAS SCALE. Issue was caused by cached in
 ## 📊 Summary
 
 <p>
-<img src="" height="80%" width="80%" alt="Final Incident Queue — All 5 Tickets Resolved"/>
+<img src="https://i.imgur.com/SDrg8JW.png" height="80%" width="80%" alt="Incident Queue — All 5 SB Studio Tickets"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/8Mrg92K.png" height="80%" width="80%" alt="Final Incident Queue — All 5 Tickets Resolved"/>
 </p>
 
 | Ticket | Description | Priority | Category | Status |
